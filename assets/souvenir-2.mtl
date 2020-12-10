@@ -6,3 +6,12 @@ d 1.0
 Ns 0.0
 illum 0
 
+newmtl souvenir-2
+Ka 1.0 1.0 1.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+d 1.0
+Ns 0.0
+illum 0
+map_Kd souvenir-2.jpg
+
