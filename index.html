@@ -87,8 +87,9 @@
 
     <a-entity material="shader: flat; src: #birds"
                 geometry="primitive: plane; width: 160; height: 90;"
-                position="0 60 -250"
-                rotation="0 35 0"
+                position="11 1.5 2.5"
+                rotation="4.47 93.56 -90"
+                scale="0.018 0.02 0"
                 play-on-click
                 visible="false">
       </a-entity>
@@ -116,6 +117,24 @@
     <!-- <a-light type="point" intensity="1" position="2 4 4"></a-light> -->
     <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
     <a-entity camera="" position="0.07657 3.78617 3.91488" wasd-controls="" rotation="4.92743703812508 2.2918311805232934 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="" visible=""></a-entity>
+
+
+
+      <a-camera>
+        <a-entity
+          position="0 0 -1.5"
+          text="align: center;
+                width: 6;
+                wrapCount: 100;
+                color: black;
+                value: Click or tap to start video"
+          hide-on-play="#birds">
+        </a-entity>
+      </a-camera>
+  
+
+
+
   </a-scene>
 </body>
 
