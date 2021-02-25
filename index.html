@@ -25,6 +25,7 @@
       <img id="360Gate-Nov29" src="assets/360Gate-Nov29.jpg">
       <img id="souvenir-2" src="assets/souvenir-2.jpg">
       <img id="1990" src="assets/1990.png">
+      <img id="2020" src="assets/2020.png">
 
      
       <!-- Add Your OBJ, MTL and PLY Files Here -->
@@ -38,7 +39,7 @@
   
 
       <!-- Add Your Audio Files, Keep "Steps" File -->
-      <audio id="step" src="assets/steps.mp3" preload="auto"></audio>    
+      <audio id="streetcar" src="assets/streetcar.m4a" preload="auto"></audio>    
       <!-- <a-asset-item id="PointCloudName" src="assets/360Gate-Nov29.ply"></a-asset-item> -->
       <!-- <a-asset-item id="OBJName" src="assets/360Gate-Nov29.obj"></a-asset-item> -->
 
@@ -62,9 +63,10 @@
 
      <!-- Position Your Images -->
     <a-image src="#1990" position="6.899 3.301 -2.92" material="" geometry="width:1.5" scale="3 3 3" rotation="0 90 0"></a-image>
+    <a-image src="#2020" position="6.899 3.301 -2.92" material="" geometry="width:1.5" scale="3 3 3" rotation="0 90 0"></a-image>
 
    <!-- Additional Matrial - Do Not Touch -->
-    <a-entity id="stepsEnt" sound="src: assets/steps.mp3; volume: 1; loop: true; poolSize: 1;" ></a-entity>
+    <a-entity id="streetcarEnt" sound="src: assets/streetcar.m4a; volume: 1; loop: true; poolSize: 1;" ></a-entity>
     <a-plane src="#groundTexture" rotation="-90 0 0" height="100" width="100"></a-plane>
     <a-light type="ambient" color="#445451" light="groundColor: #2b2727; intensity: 0.5; penumbra: 0.58; castShadows: false" visible="" rotation="" position="0.07 0 0" scale=""></a-light>
 
