@@ -94,10 +94,10 @@
     <a-image src="#baby" position="14.7 1.1 -5.8" material="" geometry="width:1.5" scale="1.2 3 3" rotation="-8.24 65 95"></a-image>
     <a-image src="#1990-corner" position="18 1.5 6.3" material="" geometry="width:1.5" scale="4 4 4" rotation="0 510 0"></a-image>
     <a-image src="#1990-restaurantsignage" position="17 1.5 -9" material="" geometry="width:1.5" scale="3 4 3" rotation="-0.7 -134 0"></a-image>
-    <a-image src="#1990-restaurantfront" position="20 1 -11" material="" geometry="width:1.5" scale="3 2 3" rotation="-1 25 0"></a-image>
+    <a-image src="#1990-restaurantfront" position="20 1 -9.9" material="" geometry="width:1.5" scale="3 2 3" rotation="-1 25 0"></a-image>
 
    <!-- Additional Matrial - Do Not Touch -->
-    <a-entity id="streetcarEnt" sound="src: assets/streetcar.m4a; volume: 1; loop: true; poolSize: 1;" ></a-entity>
+    <a-entity id="streetcarEnt" sound="src: assets/streetcar.m4a; volume: 2; loop: true; poolSize: 1;" ></a-entity>
     <a-plane src="#groundTexture" rotation="-90 0 0" height="100" width="100"></a-plane>
     <a-light type="ambient" color="#445451" light="groundColor: #2b2727; intensity: 0.5; penumbra: 0.58; castShadows: false" visible="" rotation="" position="0.07 0 0" scale=""></a-light>
 
@@ -113,7 +113,7 @@
 <script> //walking steps
   document.addEventListener("DOMContentLoaded", function(event){
     var cameraEl = document.querySelector("#camera");
-    var walking = document.querySelector('#stepsEnt');
+    var walking = document.querySelector('#streetcar');
 
     function walkingSound() {
       walking.components.sound.playSound();
