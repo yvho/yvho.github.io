@@ -124,9 +124,8 @@
           text="align: center;
                 width: 6;
                 wrapCount: 100;
-                color: black;
-                value: Click or tap to start video"
-          hide-on-play="#birds">
+                color: black;"
+                hide-on-play="#birds">
         </a-entity>
       </a-camera>
   
@@ -165,6 +164,25 @@
           walkingSoundStop();
         }
     }); 
+});
+
+
+  AFRAME.registerComponent('play-on-click', {
+  init: function () {
+    this.onClick = this.onClick.bind(this);
+  },
+  play: function () {
+    window.addEventListener('click', this.onClick);
+  },
+  pause: function () {
+    window.removeEventListener('click', this.onClick);
+  },
+  onClick: function (evt) {
+    var videoEl = this.el.getAttribute('material').src;
+    if (!videoEl) { return; }
+    this.el.object3D.visible = true;
+    videoEl.play();
+  }
 });
 </script>
 
