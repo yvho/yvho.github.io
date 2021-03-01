@@ -9,7 +9,7 @@
   <script src="https://unpkg.com/aframe-pointcloud-component/dist/aframe-pointcloud-component.min.js"></script>
   <script src="js/aframe-tooltip-component.js"></script>
   <script src="js/link-controls.js"></script>
- 
+  <script src="https://unpkg.com/aframe-simple-sun-sky@^1.2.2/simple-sun-sky.js"></script>
   
 </head>
 
@@ -20,8 +20,8 @@
       
       <!-- Images for sky and ground entity -->
       <img crossorigin="anonymous" id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
-      <img crossorigin="anonymous" id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
-   
+      <!-- <img crossorigin="anonymous" id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg"> -->
+    <img id="sky" src="sky.png">
 
  
      
@@ -41,7 +41,7 @@
       <img id="1990-restaurantsignage" src="assets/1990-restaurantsignage.png">
       <img id="1990-restaurantfront" src="assets/1990-restaurantfront.png">
 
-      <a-sky src="#sky"></a-sky>
+      
 
      
       <!-- Add Your OBJ, MTL and PLY Files Here -->
