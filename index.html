@@ -9,6 +9,7 @@
   <script src="https://unpkg.com/aframe-pointcloud-component/dist/aframe-pointcloud-component.min.js"></script>
   <script src="js/aframe-tooltip-component.js"></script>
   <script src="js/link-controls.js"></script>
+  <script src="https://unpkg.com/aframe-simple-sun-sky@^1.2.2/simple-sun-sky.js"></script>
   
 </head>
 
@@ -20,7 +21,8 @@
       <!-- Images for sky and ground entity -->
       <img crossorigin="anonymous" id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
       <!-- <img crossorigin="anonymous" id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg"> -->
-      <a-sky color="#6B94D1"></a-sky>
+      <a-simple-sun-sky sun-position="-1 1 -1" light-color="#A6C8FA" dark-color="#6B94D1" fog-color="#98B3DB"></a-simple-sun-sky>
+     
 
       <!-- Add your 2D Images Here -->
       <img id="Chinatowngate-360-Dec27" src="assets/Chinatowngate-360-Dec27.jpg">
